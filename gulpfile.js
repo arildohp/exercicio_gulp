@@ -7,9 +7,7 @@ const imagemin = require('gulp-imagemin');
 
 function comprimeImagens() {
    return gulp.src('./source/images/*')
-      .pipe(imagemin({
-         verbose: true
-      }))
+      .pipe(imagemin())
       .pipe(gulp.dest('./build/images'))
 }
 
